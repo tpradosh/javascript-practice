@@ -7,7 +7,12 @@
  * @example [1, 2, 3, 4, 5, 6, 7, 8, 9] -> [3, 6, 9]
  */
 function problem(numbers) {
-    return null;
+    let rv = []
+    for(i in numbers){
+        if (numbers[i] % 3 ==0)
+            rv.push(numbers[i])
+    }
+    return rv;
 }
 
 const tests = [
